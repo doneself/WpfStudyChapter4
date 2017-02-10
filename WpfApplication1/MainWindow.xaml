@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="250" Width="250">
+        Title="MainWindow" Height="300" Width="500">
     <StackPanel>
+        <local:CustomeTextBlock Text="{Binding RelativeSource={x:Static RelativeSource.Self},Path=Timer}" FontSize="32" Background="Wheat"/>
+        <local:CustomeTextBlock Text="{Binding RelativeSource={x:Static RelativeSource.Self},Path=Timer}" Timer="2017/03/01" FontSize="32" Background="Wheat"/>
     </StackPanel>
 </Window>
